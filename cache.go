@@ -82,7 +82,7 @@ func Get(key string) ([]byte, error) {
 		}
 		return bytes, nil
 	}
-	return nil, utils.NewError("获取失败")
+	return nil, utils.Error("获取失败")
 }
 
 // Set 设置缓存
